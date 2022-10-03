@@ -18,3 +18,10 @@ function check(a, x) {
 
 console.log(check([1,2,3], 4)) //should return false
 console.log(check([7,5,8], 5)) //should return true
+
+
+// Second Attempt 
+function check(a,x){
+  return a.includes(x)
+}
+// I just added includes() method and it gives us Boolean values TRUE & FALSE and it is less complicated
