@@ -15,8 +15,22 @@ function digitize(n) {
   // make number a string and split that 
     let newArray = n.toString().split('').reverse()
   // reverse array
-   return Number(newArray)
+   return Number(...newArray)
   // make it array and return
 }
 console.log(digitize(330),[0,3,3])
 // Cant Do it This way , will have to use map. lol
+
+
+// *********************************************************************Another Attempt *************************************
+
+function digitize(n) {
+   // make number a string and split that 
+   let newArray = n.toString().split('').reverse()
+   // reverse array
+   
+   // make it array and return
+  return newArray.map(e=>parseInt(e))
+}
+
+// Map through and make every string an integer
