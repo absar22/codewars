@@ -12,7 +12,13 @@
 // P:
 // Make a function that takes in array
 function maps(x){
-  return x.map(value => value*2)
+  if(x === undefined ||x.length === 0){
+    console.log('This array is invalid')
+  } else {
+    return x.map(value => value*2)
+
+  }
 }
 // Map through an array and multiple each element by Two & also return 
 console.log(maps([1,2,3]),[2,4,6])
+maps([])
