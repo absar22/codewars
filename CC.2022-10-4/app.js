@@ -5,6 +5,7 @@
 // 35231 => [1,3,2,5,3]
 // 0 => [0]
 
+<<<<<<< HEAD
 // P:  Are you given empty array? or undefined or null ? what then? Are you always given digits
 // R: whatever the number was , its now split in an array and the order of the array is reversed
 // E: If we were given 35231 => [1,3,2,5,3]
@@ -20,3 +21,5 @@ function digitize(n) {
 }
 console.log(digitize(330),[0,3,3])
 // Cant Do it This way , will have to use map. lol
+=======
+>>>>>>> 2ed705fdb0a4c24f5797da15ce977ed68095adc4
