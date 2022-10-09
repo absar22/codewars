@@ -65,3 +65,9 @@ function repeatStr (n, s) {
 }
 
 console.log(repeatStr(6, 'Hello'))
+
+//  Another solution with less complication  
+
+function repeatStr(n,s){
+  return s.repeat(n)
+}
