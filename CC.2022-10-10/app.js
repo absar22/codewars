@@ -34,7 +34,7 @@ function noSpace(x){
 //   if give value like  [10, 14 , 67, 89, -10, -20, -20]=> Output will  [4,-50]
 //   if give value like  [10, 14 , 67, 89, -10, -20, -20]=> Output will  [4,-50]
 
-// P: Make a function that takes Two parameter
+// P: Make a function that takes one parameter
 function countPositivesSumNegatives(input) {
 
   if(input === null || input.length === 0){
