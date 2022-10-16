@@ -136,3 +136,17 @@ function doubleInteger(i) {
 // invert([]) == []
 // You can assume that all values are integers. Do not mutate the input array/list.
 
+function invert(array) {
+  
+  for(let i = 0; i < array.length; i++){
+    if(array[i] > 0){
+      array[i] *= -array[i]
+    } else if (array[i] < 0){
+      array[i]  *= -array[i]
+    }
+  }
+
+   return array
+}
+
+console.log(invert([-1,-2,-3,-4,6]))
