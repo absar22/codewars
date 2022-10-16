@@ -32,3 +32,18 @@ function mergeArrays(arr1, arr2) {
 }
 
 console.log(mergeArrays([1,3,5,6,6], [12,65,89,5,6]))
+
+// It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+
+function removeChar(str){
+  //You got this!
+  let newString = ''
+  for(let i =1; i< str.length -1; i++){
+    newString += str[i]
+  }
+   return newString
+ };
+ 
+ 
+  console.log(removeChar('Hello'))
