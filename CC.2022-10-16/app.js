@@ -150,3 +150,14 @@ function invert(array) {
 }
 
 console.log(invert([-1,-2,-3,-4,6]))
+
+// error 
+
+
+// Another Solution 
+function invert(array) {
+  
+  return array.map(x => x * -1)
+}
+
+console.log(invert([-1,-2,-3,-4,6]))
