@@ -47,3 +47,11 @@ function removeChar(str){
  
  
   console.log(removeChar('Hello'))
+
+
+  // Another way to do this coding challenge is 
+  function removeChar(str){
+    //You got this!
+   return str.slice(1,-1)
+   };
+   
