@@ -113,3 +113,5 @@ function basicOp(operation, value1, value2)
 
 console.log(basicOp('+', 4, 7))
 console.log(basicOp('-', 18, 20))
+
+// Code as fast as you can! You need to double the integer and return it.
