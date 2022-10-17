@@ -52,3 +52,13 @@ function makeUpperCase(str) {
 }
 
 console.log(makeUpperCase('hello world'))
+
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeExclamationMarks(s) {
+  return s.replace('!', '')
+//   return '';
+}
+
+console.log(removeExclamationMarks('Hello world!'))
+
