@@ -62,3 +62,9 @@ function removeExclamationMarks(s) {
 
 console.log(removeExclamationMarks('Hello world!'))
 
+// Another solution with removing every Exclamation marks
+function removeExclamationMarks(s) {
+  return s.replaceAll('!', '')
+//   return '';
+}
+
