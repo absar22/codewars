@@ -26,3 +26,12 @@ function even_or_odd(number) {
 }
 
 console.log(even_or_odd(4))
+
+// This code does not execute properly. Try to figure out why.
+
+function multiply(a, b){
+  let multipleOf = a * b
+  return multipleOf
+}
+
+console.log(multiply(8,9))
