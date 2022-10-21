@@ -5,3 +5,15 @@
 // 1: -1
 // 14: -14
 // -34: 34
+
+function opposite(number) {
+  //your code here
+  if(number > 0){
+    return -number
+  }else {
+    return number * -1
+  }
+}
+
+console.log(opposite(5), -5)
+console.log(opposite(-5), 5)
