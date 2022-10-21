@@ -17,3 +17,5 @@ function opposite(number) {
 
 console.log(opposite(5), -5)
 console.log(opposite(-5), 5)
+
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
