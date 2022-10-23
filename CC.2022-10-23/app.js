@@ -17,3 +17,10 @@ function litres(time) {
  
 }
 console.log(litres(6.7))
+
+
+// Another way to solve this 
+
+function litres(time) {
+  return Math.floor(time*0.5)
+}
