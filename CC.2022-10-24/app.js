@@ -10,3 +10,12 @@
 // 2000 --> 20
 
 
+function century(year) {
+  // Finish this :)
+  if(year % 2 === 0 && year <= 2000 ){
+    return year / 100
+  } else {
+    return Math.ceil(year / 100)
+  }
+}
+console.log(century(1705))
