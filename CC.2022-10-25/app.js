@@ -9,3 +9,10 @@
 
 // Input: [-2.398]
 // Output: -2.398
+
+// Sum Numbers
+function sum (numbers) {
+  "use strict";
+  return numbers.reduce((acc,c) => acc + c, 0)
+  
+};
