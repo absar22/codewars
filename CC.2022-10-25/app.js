@@ -24,3 +24,14 @@ function sum (numbers) {
 // * "String"      -> "SSttrriinngg"
 // * "Hello World" -> "HHeelllloo  WWoorrlldd"
 // * "1234!_ "     -> "11223344!!__  "
+
+function doubleChar(str) {
+  // Your code here
+  let result = ''
+  for(let key of str){
+    result += key + key
+  }
+  
+  return result
+}
+console.log(doubleChar('absar'))
