@@ -35,3 +35,13 @@ function doubleChar(str) {
   return result
 }
 console.log(doubleChar('absar'))
+
+
+// Another way to solve this problem 
+function doubleChar(str) {
+  // Your code here
+  return str
+  .split('')
+  .map(x=> x+x)
+  .join('')
+}
