@@ -10,3 +10,11 @@ function boolToWord( bool ){
 }
 
 console.log(boolToWord(true))
+
+// Another way to solve 
+function boolToWord( bool ){
+  //...
+  return bool === true ? 'Yes' : 'No'
+}
+
+console.log(boolToWord(true))
