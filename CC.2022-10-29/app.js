@@ -83,3 +83,20 @@ function hero(bullets, dragons){
 // * [5]                             -> min = 5, max = 5
 // Notes
 // You may consider that there will not be any empty arrays/vectors.
+
+
+var min = function(list){
+    
+  //     return Math.max(list[0]);
+    let sortedValue = list.sort((a,b) => a -b )
+    return sortedValue[0]
+  }
+  
+  var max = function(list){
+      
+  //     return Math.min(list[0]);
+      let sortedValue = list.sort((a,b) => a -b )
+    return sortedValue[sortedValue.length -1]
+  }
+  console.log(min([1,2,3,4]), max([1,2,3,4]))
+  
