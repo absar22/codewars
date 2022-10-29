@@ -15,10 +15,10 @@ function sumArray(array) {
   if(!array || array.length === 0 || array.length === 1 || array.length === 2){
     return 0
   }
-  let sortedValue = array.sort((a,b)=> a-b)
-  let removeFirst = sortedValue.shift()
-  let removeLast = sortedValue.pop()
-  return sortedValue.reduce((acc,c) => acc +c)
+  let sortedValue = array.sort((a,b)=> a-b)  //sorted value in assending order
+  let removeFirst = sortedValue.shift()   // Removed first Element
+  let removeLast = sortedValue.pop()      // Removed last Element
+  return sortedValue.reduce((acc,c) => acc +c) // We added the remaining array
   
 }
 
