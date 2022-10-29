@@ -51,3 +51,12 @@ console.log(areaOrPerimeter(3,3))
 
 // Function should return true if it is possible and false if not.
 
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+if(distanceToPump  <= mpg * fuelLeft ){
+  return true
+}else{
+  return false
+}
+};
+console.log(zeroFuel(50,25,2), true)
