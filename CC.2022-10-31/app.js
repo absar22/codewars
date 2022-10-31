@@ -41,3 +41,14 @@ function greet (name, owner) {
   }
   
 }
+
+// Another way to solve is by using Ternary Operator
+function greet (name, owner) {
+  // Add code here
+//   if(name === owner){
+//     return 	'Hello boss'
+//   }else {
+//     return 	'Hello guest'
+//   }
+  return name === owner ? 	'Hello boss' : 'Hello guest'  // Ternaray operator
+}
