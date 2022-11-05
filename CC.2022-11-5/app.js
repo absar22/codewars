@@ -10,3 +10,9 @@
 // For example:
 
 // 5, 10, 2  -->  17
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  let totalGoals = laLigaGoals + copaDelReyGoals+ championsLeagueGoals
+  return totalGoals
+}
