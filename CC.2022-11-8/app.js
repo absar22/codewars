@@ -13,3 +13,9 @@ function getAverage(marks){
   let average = sum/marks.length
   return Math.floor(average)
 }
+
+// Another way to solve this question
+function getAverage(marks){
+  //TODO : calculate the downward rounded average of the marks array
+  return Math.floor( marks.reduce((acc,c) => acc + c, 0)/marks.length)
+}
