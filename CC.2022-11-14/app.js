@@ -23,3 +23,5 @@ function isMultiple(arr){
 }
 
 console.log(isMultiple([22, -6, 32, 82, 9, 25]))
+
+//Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
