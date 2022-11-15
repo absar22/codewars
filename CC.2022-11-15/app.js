@@ -37,3 +37,9 @@ console.log(past(0,1,1))
 
 // Note:
 // Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+
+
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+  return classPoints.reduce((acc,c) => acc + c, 0)/classPoints.length < yourPoints
+}
