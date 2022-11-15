@@ -13,3 +13,16 @@
 // 0 <= h <= 23
 // 0 <= m <= 59
 // 0 <= s <= 59
+
+function past(h, m, s){
+  //#Happy Coding! ^_^
+  
+  let hour = h  * 3600000
+  let minute  = m * 60000
+  let second = s * 1000
+  let sum = hour + minute + second
+  return sum
+  
+  
+}
+console.log(past(0,1,1))
