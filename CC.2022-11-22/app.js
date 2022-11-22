@@ -12,3 +12,10 @@ function plural(n) {
     return true
   }
 }
+
+// Another way 
+
+function plural(n) {
+  // ...
+  return n === 1 ? false : true
+}
