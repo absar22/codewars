@@ -71,3 +71,9 @@ function sayHello( name, city, state ) {
 // "Hello World" --> "World Hello"
 // "Hi There." --> "There. Hi"
 // Happy coding!
+
+function reverse(string){
+  //your code here
+  return string.split(' ').reverse().join(' ')
+}
+console.log(reverse('Hello world'))
