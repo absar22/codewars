@@ -26,3 +26,7 @@ function plural(n) {
 function main (verb, noun)  {
   return verb + noun
 }
+
+// Variable assignment
+// Fix the variables assigments so that this code stores the string 'devLab' in the variable name.
+
