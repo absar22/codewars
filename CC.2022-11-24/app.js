@@ -69,3 +69,12 @@ function subt(a,b){
 // ""     =>  NULL
 // "1"    =>  NULL
 // "1,2"  =>  NULL
+
+
+function array(arr){
+  //Good luck
+    
+    return arr.split(',').slice(1,-1).join(' ') || null
+  
+  }
+  
