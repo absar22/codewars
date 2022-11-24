@@ -87,3 +87,13 @@ function array(arr){
 // sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
 // sumMul(4, -7)  ==> "INVALID"
   
+
+function sumMul(n,m){
+  //your idea here
+  if(m <= n) return 'INVALID'
+    let sum = 0
+    for(let i = n ; i < m ; i+= n){
+      sum += i
+    }
+    return sum
+  }
