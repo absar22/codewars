@@ -44,3 +44,9 @@ function descendingOrder(n){
 // returns:
 
 // 'James Stevens'
+
+
+function combineNames(firstName,lastName){
+  return  firstName+ ' ' .concat(lastName) 
+} 
+console.log(combineNames('Absar','Ahmad'))
