@@ -33,3 +33,14 @@ function descendingOrder(n){
     value = String(n).split('').sort((a,b) => b-a)
   return Number(value.join(''))
 }
+
+
+// Combine strings function
+// Create a function named combineNames that accepts two parameters (first and last name). The function should return the full name.
+
+// Example:
+
+// combineNames('James', 'Stevens')
+// returns:
+
+// 'James Stevens'
