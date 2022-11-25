@@ -59,3 +59,15 @@ console.log(combineNames('Absar','Ahmad'))
 // Note: Make sure you return the correct message with correct spaces and punctuation.
 
 // Please leave feedback for this kata. Cheers!
+
+
+function cookie(x){
+  // ...
+  if(typeof x === 'string'){
+    return "Who ate the last cookie? It was Zach!"
+  }else if (typeof x === 'number'){
+    return "Who ate the last cookie? It was Monica!"
+  }else{
+    return "Who ate the last cookie? It was the dog!"
+  }
+}
