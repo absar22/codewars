@@ -7,3 +7,8 @@
 // If the whole array is consecutive then return null2.
 
 // The array will always have at least 2 elements1 and all elements will be numbers. The numbers will also all be unique and in ascending order. The numbers could be positive or negative and the first non-consecutive could be either too!
+
+function firstNonConsecutive (arr) {
+  const value = arr.find((e,i) => e !== i + arr[0])
+  return Number.isInteger(value) ? value : null
+}
