@@ -81,3 +81,9 @@ function whatday(num) {
   else return 'Wrong, please enter a number between 1 and 7'
 
 }
+
+// Write a function that returns a string in which firstname is swapped with last name.
+
+// Example(Input --> Output)
+
+// "john McClane" --> "McClane john"
