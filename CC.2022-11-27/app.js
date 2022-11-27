@@ -46,5 +46,12 @@ function grader(score) {
 function ensureQuestion(s) {
   // Code here
   if(s.includes('?')) return s 
-  else return s +'?'
+  else return s +'?' // STRING CONCATINATION
+}
+
+// Another solution
+
+function ensureQuestion(s) {
+  if(s.includes('?')) return s 
+  else return `${s}?`   // TEMPLATE LITERAL
 }
