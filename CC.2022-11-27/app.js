@@ -41,3 +41,10 @@ function grader(score) {
 
 // "Yes" --> "Yes?" 
 // "No?" --> "No?"
+
+
+function ensureQuestion(s) {
+  // Code here
+  if(s.includes('?')) return s 
+  else return s +'?'
+}
