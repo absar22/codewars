@@ -87,3 +87,8 @@ function whatday(num) {
 // Example(Input --> Output)
 
 // "john McClane" --> "McClane john"
+
+function nameShuffler(str){
+  //Shuffle It
+  return str.split(' ').reverse().join(' ')
+}
