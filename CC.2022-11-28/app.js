@@ -41,3 +41,16 @@ function getRealFloor(n) {
 // true xor false == true // exactly one of the two expressions are true
 // false xor true == true // exactly one of the two expressions are true
 // true xor true == false // Both are true.  "xor" only returns true if EXACTLY one of the two expressions evaluate to true.
+
+function xor(a, b) {
+  // TODO: Program Me
+  if((a === false) && (b === false)){
+    return false
+  }else if ((a === true) && (b === false)){
+    return true
+  }else if ((a === false) && (b === true)){
+    return true
+  }else if ((a === true) && (a === true)){
+    return false
+  }
+}
