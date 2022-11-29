@@ -165,3 +165,8 @@ function printArray(array){
 // E.g.
 
 // arrayMadness([4, 5, 6], [1, 2, 3]); // returns true since 4 ** 2 + 5 ** 2 + 6 ** 2 > 1 ** 3 + 2 ** 3 + 3 ** 3
+
+function arrayMadness(a, b) {
+  // Ready, get set, GO!!!
+  return a.map(x => x**2).reduce((acc,c) => acc + c, 0) > b.map(x => x**3).reduce((acc,c) =>acc+c,0) 
+}
