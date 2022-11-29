@@ -138,3 +138,8 @@ function distinct(a) {
 // [68, -1, 1, -7, 10, 10] => [-1, 10]
 
 // [-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
+
+function multipleOfIndex(array) {
+  // good luck
+  return array.filter((e,i) => e % i == 0)
+}
