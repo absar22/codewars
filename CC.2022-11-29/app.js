@@ -11,3 +11,10 @@ function bonusTime(salary, bonus) {
     if(bonus) return '£' + salary * 10
     else return '£' + salary
   }
+
+
+//   The function is not returning the correct values. Can you figure out why?
+
+// Example (Input --> Output ):
+
+// 3 --> "Earth"
