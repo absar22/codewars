@@ -57,3 +57,7 @@ function getPlanetName(id){
 var a = "code";
 var b = "wa.rs";
 var name = a + b;
+
+// How many arguments
+// args_count(1, 2, 3) -> 3
+// args_count(1, 2, 3, 10) -> 4
