@@ -38,3 +38,12 @@ function saleHotdogs(n){
   else if ((n >=5) && (n < 10)) return 95 * n
   else  return 90 * n
 }
+
+
+
+// Write a function that always returns 5
+
+// Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+
+// Good luck :)
+
