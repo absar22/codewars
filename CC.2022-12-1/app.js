@@ -47,3 +47,7 @@ function saleHotdogs(n){
 
 // Good luck :)
 
+function unusualFive() {
+  let value = 'APPLE'
+  return value.length
+}
