@@ -105,3 +105,17 @@ for(let i = 1; i <= turns; i++){
 // n = 0
 // m = 1
 // result - division by zero (refer to the specifications on how to handle this in your language)
+
+
+function remainder(n, m){
+  // Divide the larger argument by the smaller argument and return the remainder
+  if(n > m){
+    return n % m
+  }else if ( m > n){
+    return m % n
+  }else if ((n ===0) || (m ===0)){
+    return NaN
+  }else if ((n < 0) || (m < 0)){
+    return 0
+  }
+}
