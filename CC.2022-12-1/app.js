@@ -131,3 +131,8 @@ function remainder(n, m){
 // remove("!Hi!") == "!Hi"
 // remove("Hi! Hi!") == "Hi! Hi"
 // remove("Hi") == "Hi"
+
+function remove (string) {
+  //coding and coding....
+  return string.replace(/!$/, '')
+}
