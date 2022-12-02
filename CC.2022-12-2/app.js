@@ -51,3 +51,9 @@ function helloWorld(){
 // * With `name` = "aliCE" => return "Hello, Alice!"
 // * With `name` not given 
 //   or `name` = ""        => return "Hello, World!"
+
+function hello(name) {
+  if(name) return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`
+  else return 'Hello, World!'
+
+}
