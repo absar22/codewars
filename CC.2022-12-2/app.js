@@ -10,3 +10,8 @@
 
 // "anyone else" --> 0
 // "Zach" --> 18
+
+function howManyLightsabersDoYouOwn(name) {
+  if(name === 'Zach')  return 18
+  else return 0
+}
