@@ -61,10 +61,10 @@ function replace(s){
 // Parameter => It will take only +ve integers 
 // Return => we need to return an Array populated with arguments
 // Example 
-  1 === [1]
-  2 === [1,2]
-  3 === [1.2.3]
-  4 === [1,2,3,4]
+  // 1 === [1]
+  // 2 === [1,2]
+  // 3 === [1.2.3]
+  // 4 === [1,2,3,4]
 
   function preFizz(n) {
     // Let declare a variable were we will store our result 
