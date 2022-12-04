@@ -52,3 +52,27 @@ function replace(s){
 //  Your expected output is an array of positive integers from 1 to n (inclusive).
  
 //  Your job is to write an algorithm that gets you from the input to the output.
+
+
+// SOLUTION
+
+
+// PREP
+// Parameter => It will take only +ve integers 
+// Return => we need to return an Array populated with arguments
+// Example 
+  1 === [1]
+  2 === [1,2]
+  3 === [1.2.3]
+  4 === [1,2,3,4]
+
+  function preFizz(n) {
+    // Let declare a variable were we will store our result 
+    let result = []
+    // We will loop through the n parameter
+    for(let i = 1; i <= n; i ++){
+      // Every time the loop runs we push our value to result
+      result.push(i)
+    }
+      return result
+    }
