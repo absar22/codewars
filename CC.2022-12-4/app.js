@@ -28,4 +28,20 @@ function replace(s){
   
 }
 
+// Another way to solve 
+function replace(s){
+  let vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  let result = ''
+  for(value of s){
+    if(vowel.includes(value)){
+      result += '!'
+    }
+    else {
+      result += value
+    }
+  }
+   return result
+ }
+ console.log(replace('aeiou'))
+
 
