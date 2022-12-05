@@ -5,3 +5,10 @@
 // Here's how it will be tested:
 
 //     Solution.main("parameter1","parameter2");
+
+class Solution{
+  static main() {
+     console.log('Hello World!')
+   }
+ }
+ 
