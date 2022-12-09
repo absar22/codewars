@@ -37,3 +37,24 @@ return newString
 // "HELLO"     -->  "HELLO"
 // don't worry about uppercase vowels
 // y is not considered a vowel for this kata
+
+
+function shortcut (string) {
+  let newString = ''
+  for(let char of string){
+    if((char === 'a')){
+      newString += ''
+    }else if (char === 'e'){
+      newString += ''
+    }else if (char === 'i'){
+      newString += ''
+    }else if (char === 'o'){
+      newString += ''
+    }else if (char === 'u'){
+      newString += ''
+    }else {
+      newString += char
+    }
+  }
+   return newString
+ }
