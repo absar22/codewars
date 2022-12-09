@@ -9,3 +9,19 @@
 // I is misinterpreted as 1
 // The test cases contain numbers only by mistake.
 
+function correct(string){
+  let newString = ''
+  for(let char of string){
+   if(char === '5'){
+     newString += 'S'
+   } else if (char === '1'){
+     newString += 'I'
+   }else if (char === '0') {
+     newString += 'O'
+   }  else {
+     newString += char
+   }
+    
+}
+return newString
+}
