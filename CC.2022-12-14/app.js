@@ -52,3 +52,12 @@ console.log(getCount('abracadabra'))
 
 // Input: [0, -1, -5]
 // Output: "even"
+
+
+
+function oddOrEven(array) {
+ if(array.length === 0) return 'even'
+ 
+ if( array.reduce((acc,c) => acc +c, 0)%2 === 0) return 'even'
+ else return 'odd'
+} 
