@@ -114,3 +114,6 @@ function differenceInAges(ages){
 var ArrowFunc = function(arr) {
   return arr.map(x => String.fromCharCode(x) ).join(''); //Complete this function
 }
+
+
+// You are trying to put a hash in ruby or an object in javascript or java into an array, but it always returns error, solve it and keep it as simple as possible!
