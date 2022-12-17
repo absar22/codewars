@@ -140,3 +140,8 @@ items.push({a: "b", c: "d"})
 
 // 16/4 = 4
 // 3. The mean (or average) of this list is 4
+
+
+var findAverage = function (nums) {
+  return nums.reduce((acc,c) => acc + c, 0)/nums.length
+}
