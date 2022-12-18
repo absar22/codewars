@@ -24,3 +24,16 @@ function feast(beast, dish) {
   
   // ("1", "22") --> "1221"
   // ("22", "1") --> "1221"
+
+
+
+  function solution(a, b){
+    // your code here
+    if(a.length > b.length){
+      return b + a + b
+    }else {
+      return a + b + a
+    }
+    
+    
+  }
