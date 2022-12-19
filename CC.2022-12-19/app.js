@@ -58,3 +58,26 @@ function joinStrings(string1, string2){
 // Note: anything else is the default case: if the input to the function is not any of the values in the table, then the return value should be "Beer".
 
 // Make sure you cover the cases where certain words do not show up with correct capitalization. For example, the input "pOLitiCIaN" should still return "Your tax dollars".
+
+
+function getDrinkByProfession(pram) {
+
+  pram = pram.toLowerCase();
+
+
+  if (pram === "jabroni") {
+    return "Patron Tequila";
+  } else if (pram === "school counselor") {
+    return "Anything with Alcohol";
+  } else if (pram === "programmer") {
+    return "Hipster Craft Beer";
+  } else if (pram === "bike gang member") {
+    return "Moonshine";
+  } else if (pram === "politician") {
+    return "Your tax dollars";
+  } else if (pram === "rapper") {
+    return "Cristal";
+  } else {
+    return "Beer";
+  }
+}
