@@ -37,3 +37,16 @@ function move (position, roll) {
 // Your function will be tested with pre-made examples as well as random ones.
 
 // If you can, try writing it in one line of code.
+
+
+function findDifference(a,b) {
+  //loading...
+    let volume1 = a.reduce((acc,c) => acc * c, 1)
+    let volume2 = b.reduce((acc,c) => acc * c, 1)
+    if((volume1 - volume2) > 0){
+      return volume1 - volume2
+    }else {
+      return Math.abs(volume1 - volume2 )
+    }
+}
+console.log(findDifference([3, 2, 5], [1, 4, 4]))
