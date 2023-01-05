@@ -11,3 +11,9 @@
 // A string consists of lowercase latin letters, digits and symbols.
 
 // [output] a string
+
+function reverseLetter(str) {
+  //coding and coding..
+  
+   return  str.split('').reverse().join('').match(/[a-z]/ig).join('')
+}
