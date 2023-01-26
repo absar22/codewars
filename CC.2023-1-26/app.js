@@ -70,3 +70,20 @@ else {
 
 // titanic.isWorthIt() // return false
 // Good luck and may you find GOOOLD!
+
+
+
+function Ship(draft,crew) {
+  this.draft = draft;
+  this.crew = crew;
+   this.isWorthIt = function(){
+     // remove weight of crew
+     let draftWithoutCrew = this.draft - (this.crew * 1.5)
+      // check if draft is more than 20
+     return draftWithoutCrew > 20
+   }
+ }
+ 
+ 
+ var titanic = new Ship(15 ,10)
+ console.log(titanic.isWorthIt())
