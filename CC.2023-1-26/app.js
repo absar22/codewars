@@ -87,7 +87,7 @@ function Ship(draft,crew) {
  var titanic = new Ship(15 ,10)
  console.log(titanic.isWorthIt())
 
- 
+
 
 //  Write a function to get the first element(s) of a sequence. Passing a parameter n (default=1) will return the first n element(s) of the sequence.
 
@@ -99,3 +99,11 @@ function Ship(draft,crew) {
 // first(arr, 2) //=> ['a', 'b']
 // first(arr, 3) //=> ['a', 'b', 'c'];
 // first(arr, 0) //=> [];
+
+function first(arr, n = 1 ) {
+  if(n === 0){
+    return []
+  } else {
+    return arr.slice(0 , n)
+  }
+  }
