@@ -30,3 +30,7 @@ else {
   return 0
 }
   }
+
+
+
+  // Return the type of the sum of the two arguments
