@@ -19,3 +19,7 @@ function oddCount(n){
 
 // Notes
 // String str will never be null.
+
+var replaceDots = function(str) {
+  return str.replace(/\./g, '-');
+}
