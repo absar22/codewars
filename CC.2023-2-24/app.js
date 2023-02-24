@@ -46,3 +46,5 @@ function getChar(c){
 function derive(coefficient,exponent) {
   return `${coefficient * exponent}x^${exponent-1}`
 }
+
+// This method, which is supposed to return the result of dividing its first argument by its second, isn't always returning correct values. Fix it.
