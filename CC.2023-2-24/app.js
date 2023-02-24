@@ -49,3 +49,17 @@ function derive(coefficient,exponent) {
 
 // This method, which is supposed to return the result of dividing its first argument by its second, isn't always returning correct values. Fix it.
 const solve = (x, y) => x / y
+
+// Given a string s, write a method (function) that will return true if its a valid single integer or floating number or false if its not.
+
+// Valid examples, should return true:
+
+// isDigit("3")
+// isDigit("  3  ")
+// isDigit("-3.23")
+// should return false:
+
+// isDigit("3-4")
+// isDigit("  3   5")
+// isDigit("3 5")
+// isDigit("zero")
