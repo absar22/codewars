@@ -63,3 +63,9 @@ const solve = (x, y) => x / y
 // isDigit("  3   5")
 // isDigit("3 5")
 // isDigit("zero")
+
+
+function isDigit(s) {
+  //your code
+  return !isNaN(parseFloat(s)) && isFinite(s)
+}
