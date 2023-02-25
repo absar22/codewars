@@ -45,3 +45,8 @@ function generateRange(min, max, step){
 
 // solution('abc', 'bc') // returns true
 // solution('abc', 'd') // returns false
+
+function solution(str, ending){
+  // TODO: complete
+  return str.endsWith(ending)
+}
