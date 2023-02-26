@@ -34,3 +34,9 @@ function squareDigits(num){
 //  4  =>  true
 // 25  =>  true
 // 26  =>  false
+
+var isSquare = function(n){
+  let result = Math.sqrt(n)
+  return Number.isInteger(result)
+  
+}
