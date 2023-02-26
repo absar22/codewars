@@ -7,3 +7,9 @@
 // Note: The function accepts an integer and returns an integer.
 
 // Happy Coding!
+
+
+function squareDigits(num){
+  let result = String(num).split('').map(x => x**2).join('')
+  return Number(result)
+}
