@@ -14,3 +14,8 @@ function findShort(s){
 // accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 // accum("cwAt") -> "C-Ww-Aaa-Tttt"
 // The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+function accum(s) {
+	// your code
+  return s.split('').map((x,i) => x.toUpperCase() + x.toLowerCase().repeat(i)).join('-')
+}
