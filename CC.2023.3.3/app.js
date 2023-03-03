@@ -2,3 +2,8 @@
 
 // Example
 // Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
+
+var capitals = function (word) {
+	// Write your code here
+  return word.split('').map((x,i) => x === x.toUpperCase() ? i : undefined).filter(x => x !== undefined)
+};
