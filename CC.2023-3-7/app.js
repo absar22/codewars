@@ -37,3 +37,6 @@ function twoOldestAges(ages){
 
 // You can assume all values in the array are numbers.
 
+function smallEnough(a, limit){
+  return a.every(element => element <= limit)
+}
