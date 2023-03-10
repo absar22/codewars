@@ -7,3 +7,18 @@
 // XO("ooxXm") => true
 // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 // XO("zzoo") => false
+
+function XO(str) {
+  //code here
+ str = str.toLowerCase()
+let x = 0
+let y = 0
+for(let i = 0 ; i < str.length; i++){
+  if(str[i] === 'x'){
+    x++
+  }else if (str[i] === 'o'){
+    y++
+  }
+}
+return x === y
+}
