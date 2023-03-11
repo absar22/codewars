@@ -39,3 +39,7 @@ function getSum(a, b) {
 // Return false for invalid numbers too (e.g volume or side is less than or equal to 0).
 
 // Note: side will be an integer
+
+var cubeChecker = function(volume, side){
+   return volume / side ** 2 == side && side > 0
+ };
