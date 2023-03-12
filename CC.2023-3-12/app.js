@@ -7,3 +7,17 @@
 // vowelOne( "abceios" ) // "1001110"
 
 // vowelOne( "aeiou, abc" ) // "1111100100"
+
+function vowelOne(s){
+  // ...
+  let vowel = 'aeiouAEIOU'
+  let result = ''
+  for(let i = 0; i < s.length; i++){
+    if(vowel.includes(s[i])){
+      result += 1
+    }else {
+      result += 0
+    }
+  }
+  return result
+}
