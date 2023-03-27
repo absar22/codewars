@@ -35,3 +35,14 @@ function stringy(size) {
 
 // Example
 // Input:  1,3,5,6,7,8 Output: 1,2,3,4,5,6,7,8
+
+
+function pipeFix(numbers){
+  let min = Math.min(...numbers)
+  let max = Math.max(...numbers)
+  let result = []
+  for(let i = min; i <= max; i++){
+    result.push(i)
+  }
+   return result
+ }
