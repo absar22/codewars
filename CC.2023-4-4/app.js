@@ -7,3 +7,9 @@
 // 100 --> 198
 // 1298734 --> 2597466
 // The input will not be 0.
+
+function nthEven(n){
+  // your code here
+  let index = n -1
+  return index * 2
+}
