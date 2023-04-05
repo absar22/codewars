@@ -7,3 +7,14 @@
 // Examples
 // [4, 3, 1, 2, 5, 10, 6, 7, 9, 8]  -->  30   # because 4 + 2 + 10 + 6 + 8 = 30
 // []                               -->  0
+
+
+function sumEvenNumbers(input) {
+  // [...]
+    return input.reduce((acc,c) => {
+      if(Number.isInteger(c) && c % 2 === 0){
+        return acc + c
+      }
+      return acc
+    }, 0)
+}
