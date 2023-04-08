@@ -6,3 +6,19 @@
 // ('3♦') -> return 'diamonds'
 // ('3♥') -> return 'hearts'
 // ('3♠') -> return 'spades'
+
+
+function defineSuit(card) {
+  switch (card[card.length - 1]) {
+    case '♣':
+      return 'clubs';
+    case '♦':
+      return 'diamonds';
+    case '♥':
+      return 'hearts';
+    case '♠':
+      return 'spades';
+    default:
+      return '';
+  }
+}
