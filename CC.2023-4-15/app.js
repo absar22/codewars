@@ -86,3 +86,7 @@ function getSize(l, w, h){
   let volume = l*w*h
   return [area, volume]
 }
+
+
+// This function should return an object, but it's not doing what's intended. What's wrong?
+
