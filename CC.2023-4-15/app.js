@@ -80,3 +80,9 @@ function correctTail(bod, tail) {
 
 
 // Write a function that returns the total surface area and volume of a box as an array: [area, volume]
+
+function getSize(l, w, h){
+  let area = 2*l*w + 2*l*h + 2*w*h
+  let volume = l*w*h
+  return [area, volume]
+}
