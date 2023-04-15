@@ -9,3 +9,13 @@
 // isPowerOfTwo(4096) // -> true
 // isPowerOfTwo(333)  // -> false
 // Beware of certain edge cases - for example, 1 is a power of 2 since 2^0 = 1 and 0 is not a power of 2.
+
+
+function isPowerOfTwo(n){
+  //.. should return true or false ..
+  if(n <= 0){
+    return false
+  }
+ 
+  return (n &  (n-1)) === 0
+}
