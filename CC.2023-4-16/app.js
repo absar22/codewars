@@ -14,3 +14,23 @@ function buildString(...template){
 // * Input: [1,2,3,4,5], output = [2,3,4,5]
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
+
+function removeSmallest(numbers) {
+
+   // Find the index of the smallest element
+  let smallestIndex = 0
+  for(let i = 1;  i < numbers.length; i++){
+    if(numbers[i] < numbers[smallestIndex]){
+      smallestIndex = i
+    }
+  }
+  
+    // Create a new array with the smallest element removed
+  let result = []
+  for(let i = 0; i < numbers.length; i++){
+    if(i !== smallestIndex){
+      result.push(numbers[i])
+    }
+  }
+  return result
+}
