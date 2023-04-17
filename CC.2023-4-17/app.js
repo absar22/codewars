@@ -6,3 +6,6 @@ function noOdds( values ){
   // Return all non-odd values
   return values.filter(x => x % 2 === 0)
 }
+
+
+// Just a simple sorting usage. Create a function that returns the elements of the input-array / list sorted in lexicographical order.
