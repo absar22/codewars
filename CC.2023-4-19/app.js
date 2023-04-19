@@ -7,3 +7,19 @@
 // Examples
 // [1, 1, 2] ==> 2
 // [17, 17, 3, 17, 17, 17, 17] ==> 3
+
+
+
+function stray(numbers) {
+  let count = {}
+  for(let i = 0; i < numbers.length; i++){
+    let num = numbers[i]
+    count[num] = (count[num] || 0) + 1
+  }
+  
+  for (let num in count){
+    if(count[num] % 2 !== 0){
+      return parseInt(num)
+    }
+  }
+}
