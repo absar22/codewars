@@ -10,3 +10,10 @@
 
 // Output
 // Output will be the shortened string, e.g., "Friday May 2".
+
+
+
+function shortenToDate(longDate) {
+  // your code here
+   return longDate.split(',').slice(0, -1).join(',')
+}
