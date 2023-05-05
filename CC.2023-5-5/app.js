@@ -27,3 +27,9 @@ function contamination(text, char){
 // remove("!Hi!") === "Hi!"
 // remove("Hi! Hi!") === "Hi Hi!"
 // remove("Hi") === "Hi!"
+
+function remove (string) {
+  //coding and coding....
+  let removeExclamationMark = string.replace(/!/g , '')
+  return removeExclamationMark.trim() + '!'
+}
