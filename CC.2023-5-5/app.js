@@ -45,3 +45,5 @@ function remove (string) {
 // remove("!Hi!") === "!Hi"
 // remove("Hi! Hi!") === "Hi! Hi"
 // remove("Hi") === "Hi"
+
+const remove = string => string.replace(/!+$/g, '')
