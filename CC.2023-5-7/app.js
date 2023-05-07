@@ -14,3 +14,10 @@
 // [100, 3, 999] : it is NOT possible to form a Pythagorean Triple using these 3 integers - no matter how you arrange them, you will never find a way to satisfy the equation a2 + b2 = c2
 
 // Return Values
+
+
+function isPythagoreanTriple(integers) {
+  // Good luck friends
+  return integers[0] ** 2 + integers[1]** 2 === integers[2]** 2  
+    
+}
