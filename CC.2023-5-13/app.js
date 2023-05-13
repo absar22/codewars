@@ -27,3 +27,16 @@ function twoSort(s) {
 // Happiness rating will be total score / number of people in the room.
 
 // Note that your boss is in the room (boss), their score is worth double it's face value (but they are still just one person!).
+
+function outed(meet, boss){
+  let total = 0
+  let numOfPeople = 0
+  for(let name in meet){
+    const happiness = name === boss ? meet[name]*2 : meet[name]
+    total += happiness
+    numOfPeople++
+  }
+  
+  const avgHappiness = total / numOfPeople
+  return avgHappiness <= 5 ? 'Get Out Now!' :   'Nice Work Champ!'
+ }
