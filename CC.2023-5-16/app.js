@@ -35,3 +35,16 @@ const binaryArrayToNumber = arr => {
 
 // 1 -->  1
 // 2 --> 3 + 5 = 8
+
+
+function rowSumOddNumbers(n) {
+	// TODO
+  let firstNumber = (n * (n - 1) + 1)
+  
+  let sum = 0
+  for(let i =0; i < n; i++){
+    sum += firstNumber + (2 * i)
+  }
+  
+  return sum 
+}
