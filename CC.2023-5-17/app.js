@@ -16,3 +16,7 @@ var number = function(array) {
   }
   return result;
 };
+var number=function(array){
+  //your awesome code here
+  return array.map((e,i) => `${i + 1}: ${e}`)
+}
