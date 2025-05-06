@@ -1,0 +1,1 @@
+This repository contains my solutions to various challenges from Codewars. The solutions cover a wide range of problems, from beginner to advanced levels, and involve various algorithms and data structures.
