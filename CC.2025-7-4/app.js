@@ -1,38 +1,25 @@
+
+                                             // Codewars kata 8kyu
+
 // What we want to implement is Array.prototype.filter() function, just like the existing Array.prototype.filter(). Another similar function is _.filter() in underscore.js and lodash.js.
 
 // The usage will be quite simple, like:
 
 // [1, 2, 3, 4, 5].filter(num => num > 3) == [4, 5]
-// Of course, the existing Array.prototype.filter() function has been undefined for the purposes of this Kata.
-
 
 Array.prototype.filter = function (func) {
   //nothing here, you will feel pretty awesome to write down by yourself
   //have fun :)
-  let result = [];
-  for (let i = 0; i < this.length; i++) {
-    if (func(this[i], i, this)) {
-      result.push(this[i]);
+  let result = []
+  for(let i = 0; i < this.length;i++){
+    if (func(this[i], i, this)){
+      result.push(this[i])
     }
   }
-  return result;
+  return result
 }
 
-//Explanation
-          // if (func(this[i], i, this)) {
-          // You call the callback function (func) and pass:
-
-          // this[i] – the current value.
-
-          // i – the current index.
-
-          // this – the full array.
-
-          // If the callback returns true, you keep the item.
-
-
-
-//   Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+// Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
 
 // Some cases:
 // [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
@@ -41,9 +28,7 @@ Array.prototype.filter = function (func) {
 
 // [-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
 
-
-const multipleOfIndex = arr => arr.filter((e,i)=> e === 0 || e % i === 0) 
-
+const multipleOfIndex = arr => arr.filter((e,i)=> e === 0 || e % i === 0)
 
 
 // Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.
@@ -71,28 +56,6 @@ function array(string) {
 }
 
 
-
-// Your task is to sum the differences between consecutive pairs in the array in descending order.
-
-// Example
-// [2, 1, 10]  -->  9
-// In descending order: [10, 2, 1]
-
-// Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
-
-
-function sumOfDifferences(arr) { 
-  
-  let sortedValue = arr.sort((a,b)=>b-a)
-  let sum = 0
-  for(let i = 0; i < sortedValue.length -1 ;i++){
-    sum+= sortedValue[i] - sortedValue[i + 1]
-  }
-  return sum
-}
-
-
-
 // For every good kata idea there seem to be quite a few bad ones!
 
 // In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
@@ -116,8 +79,6 @@ function well(x){
 
 
 
-// Wolves have been reintroduced to Great Britain. You are a sheep farmer, and are now plagued by wolves which pretend to be sheep. Fortunately, you are good at spotting them.
-
 // Warn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing at the front of the queue which is at the end of the array:
 
 // [sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]      (YOU ARE HERE AT THE FRONT OF THE QUEUE)
@@ -133,8 +94,6 @@ function well(x){
 // Input: ["sheep", "sheep", "wolf"]
 // Output: "Pls go away and stop eating my sheep"
 
-
-
 function warnTheSheep(queue) {
    for(let i = queue.length -1 ; i >= 0 ; i--){
      if(queue[i] === 'wolf'){
@@ -148,11 +107,7 @@ function warnTheSheep(queue) {
    }
 }
 
-
-
-
-
-// Another Solution 
+// Refractored
 
 function warnTheSheep(queue) {
    let changedIndexPosition = queue.reverse().indexOf('wolf')
