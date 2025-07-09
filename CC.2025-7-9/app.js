@@ -53,3 +53,19 @@ var number=function(array){
   //your awesome code here
   return array.map((e,i) => `${i+1}: ${e}`)
 }
+
+
+// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+// Examples
+// highAndLow("1 2 3 4 5"); // return "5 1"
+// highAndLow("1 2 -3 4 5"); // return "5 -3"
+// highAndLow("1 9 3 4 -5"); // return "9 -5"
+
+
+function highAndLow(numbers){
+  // ...
+  let firstNumber = numbers.split(' ').map((e) => Number(e)).sort((a,b) => b - a).slice(0,1)[0]
+  let secondNumber =  numbers.split(' ').map((e) => Number(e)).sort((a,b) => b - a).slice(-1)[0] 
+  return [firstNumber, secondNumber].join(' ')
+}
