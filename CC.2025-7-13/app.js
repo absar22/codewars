@@ -57,3 +57,13 @@ function isIsogram(str){
 
 // Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 // Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+
+Object.defineProperty(
+  String.prototype,
+  'toJadenCase',
+  { value :
+   function toJadenCase() {
+     return this.split(' ').map(e => e[0].toUpperCase() + e.slice(1)).join(' ')
+   }
+  }
+);
