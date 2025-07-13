@@ -31,3 +31,22 @@ function getMiddle(s) {
   //Code goes here!
     return s.length % 2 === 0 ?  s[Math.floor(s.length/2) -1] + s[Math.floor(s.length/2)] :  s[Math.floor(s.length/2)]
 }
+
+// Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+// Example: (Input --> Output)
+
+// "Dermatoglyphics" --> true
+// "aba" --> false
+// "moOse" --> false (ignore letter case)
+
+function isIsogram(str){
+  //...
+  str = str.toLowerCase()
+  for(let i = 0; i < str.length;i++){
+    if(str.indexOf(str[i]) !== str.lastIndexOf(str[i])){
+      return false
+    }
+  }
+  return true
+}
