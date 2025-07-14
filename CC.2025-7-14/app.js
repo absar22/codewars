@@ -26,3 +26,10 @@ function squareDigits(num){
 
 
 const descendingOrder = n =>  +( n.toString().split('').sort((a,b) => b - a).join(''))
+
+// Task
+// Given an integral number, determine if it's a square number:
+
+var isSquare = function(n){
+  return Number.isInteger(Math.sqrt(n)) ? true : false
+}
