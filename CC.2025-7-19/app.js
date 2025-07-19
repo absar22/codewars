@@ -37,3 +37,6 @@ function squareOrSquareRoot(array) {
   }
   return newArr
 }
+
+// One liner
+const squareOrSquareRoot = array => array.map(n => Number.isInteger(Math.sqrt(n))? Math.sqrt(n) : n**2)
