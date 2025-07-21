@@ -204,3 +204,19 @@ function findLongest(array){
     return acc.toString().length >= c.toString().length ? acc : c
   })
 }
+
+
+// Given a mixed array of number and string representations of integers, add up the non-string integers and subtract the total of the string integers.
+
+// Return as a number.
+
+function divCon(x){
+let numbers =  x
+   .filter(x => typeof x === 'number')
+   .reduce((a,b) => a + b,0)
+let stringsConvertedInNumber =  x
+    .filter(x => typeof x === 'string')
+    .map(x => Number(x))
+    .reduce((a,b) => a + b, 0)
+return numbers - stringsConvertedInNumber
+}
