@@ -88,3 +88,58 @@ var polishLetters = {
 function correct(string){
   return string.split('').map((char)=> polishLetters[char] || char).join('')
 }
+
+
+// Write a function that accepts fight string consists of only small letters and return who wins the fight. When the left side wins return Left side wins!, when the right side wins return Right side wins!, in other case return Let's fight again!.
+
+// The left side letters and their power:
+
+//  w - 4
+//  p - 3
+//  b - 2
+//  s - 1
+// The right side letters and their power:
+
+//  m - 4
+//  q - 3
+//  d - 2
+//  z - 1
+
+function alphabetWar(fight)
+{
+    let leftSide = {
+    'w': 4,
+    'p': 3,
+    'b': 2,
+    's': 1
+  }
+
+  let rightSide = {
+    'm': 4,
+    'q': 3,
+    'd': 2,
+    'z': 1
+  }
+  
+  let leftScore = 0
+  let rightScore = 0
+  
+  for(let i = 0; i < fight.length;i++){
+    let char = fight[i]
+    if(leftSide[char]){
+      leftScore += leftSide[char]
+    }else if (rightSide[char]){
+      rightScore += rightSide[char]
+    }
+  }
+  
+  if(leftScore > rightScore){
+    return 'Left side wins!'
+  }else if (leftScore < rightScore){
+    return 'Right side wins!'
+  }else {
+    return "Let's fight again!"
+  }
+  
+
+}
