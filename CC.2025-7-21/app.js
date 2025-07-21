@@ -69,3 +69,22 @@ function correctPolishLetters (string) {
   }
   return newStr
 }
+
+
+
+// Another solution
+var polishLetters = {
+    "ą": "a",
+    "ć": "c",
+    "ę": "e",
+    "ł": "l",
+    "ń": "n",
+    "ó": "o",
+    "ś": "s",
+    "ź": "z",
+    "ż": "z",
+};
+
+function correct(string){
+  return string.split('').map((char)=> polishLetters[char] || char).join('')
+}
