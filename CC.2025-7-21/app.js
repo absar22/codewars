@@ -191,4 +191,16 @@ const removeUrlAnchor = url =>  url.split('#')[0]
 
 // All inputs will be valid.
 
-const digits = n => n.toString().length;
+// const digits = n => n.toString().length;
+
+
+
+// Find the number with the most digits.
+
+// If two numbers in the argument array have the same number of digits, return the first one in the array.
+
+function findLongest(array){
+  return array.reduce((acc,c) => {
+    return acc.toString().length >= c.toString().length ? acc : c
+  })
+}
