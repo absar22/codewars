@@ -22,3 +22,28 @@ function nicknameGenerator(name) {
 
 
 const sortGiftCode = code => code.split('').sort().join('')
+
+
+// Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+
+// Example:
+
+// Input:
+
+// 'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+
+// Output:
+
+// 'alpha beta gamma delta'
+
+
+function removeDuplicateWords (s) {
+  let words = s.split(' ')
+  let newArr = []
+  for(let i = 0; i <words.length;i++){
+    if(!newArr.includes(words[i])){
+      newArr.push(words[i])
+    }
+  }
+  return newArr.join(' ')
+}
