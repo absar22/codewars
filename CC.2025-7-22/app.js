@@ -59,3 +59,19 @@ function removeDuplicateWords (s) {
 function accum(s) {
 	return s.split('').map((x,i) => x.toUpperCase() +x.toLowerCase().repeat(i)).join('-')
 }
+
+// our task is to write a function maskify, which changes all but the last four characters into '#'.
+
+// Examples (input --> output):
+// "4556364607935616" --> "############5616"
+//      "64607935616" -->      "#######5616"
+//                "1" -->                "1"
+//                 "" -->                 ""
+
+// // "What was the name of your first pet?"
+// "Skippy" --> "##ippy"
+// "Nananananananananananananananana Batman!" --> "########################
+
+const maskify = cc => cc.length <= 4 ? cc : '#'.repeat(cc.length - 4) + cc.slice(-4)
+
+
