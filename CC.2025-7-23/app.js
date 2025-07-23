@@ -55,5 +55,18 @@ function flattenAndSort(array) {
    return  array.join(',').split(',').filter(x => x !== '').map(Number).sort((a,b) => a - b)
 }
 
-
+// Another solution
 const flattenAndSort = array => array.flat().sort((a,b)=>a-b);
+
+
+
+
+// You need to cast the whole array to the correct type.
+
+// Create the function that takes as a parameter a sequence of numbers represented as strings and outputs a sequence of numbers.
+
+// ie:["1", "2", "3"] to [1, 2, 3]
+
+// Note that you can receive floats as well.
+
+const  toNumberArray = stringarray => stringarray.map(x => Number(x))
