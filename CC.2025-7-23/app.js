@@ -54,3 +54,6 @@ function flattenAndSort(array) {
   // Good luck, brave code warrior!
    return  array.join(',').split(',').filter(x => x !== '').map(Number).sort((a,b) => a - b)
 }
+
+
+const flattenAndSort = array => array.flat().sort((a,b)=>a-b);
