@@ -51,3 +51,15 @@ function Hero (name) {
 // Write a function which will return value for which strict comparison will give false!
 
 const findStrangeValue = () => NaN
+
+
+
+
+// you have to do: define a method Number.prototype.times that accepts a function f as an argument and executes it as many times as the integer it is called on (e.g. (100).times would execute something 100 times). The iteration variable i should be supplied to the anonymous function being executed in order to support looping through array elements.
+
+Number.prototype.times = function (f) {
+  // Go ahead and define me :)
+   for(let i = 0; i < this;i++){
+     f(i)
+   }
+}
