@@ -74,3 +74,7 @@ function swap (string) {
 
 
 // Another way to solve
+function swap (string) {
+  let vowels = 'aeiou'
+  return string.split('').map(c=>vowels.includes(c)? c .toUpperCase(): c).join('')
+}
