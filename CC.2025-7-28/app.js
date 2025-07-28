@@ -46,3 +46,28 @@ function last(x){
      return lastA.localeCompare(lastB)
    })
 }
+
+
+// When provided with a String, capitalize all vowels
+
+// For example:
+
+// Input : "Hello World!"
+
+// Output : "HEllO WOrld!"
+
+// Note: Y is not a vowel in this kata.
+
+function swap (string) {
+   let vowels = 'aeiou'
+   let result = ''
+   for(let i = 0; i < string.length;i++){
+     let char = string[i]
+     if(vowels.includes(char)){
+       result += char.toUpperCase()
+     }else {
+       result += char
+     }
+   }
+  return result
+}
