@@ -71,3 +71,6 @@ function swap (string) {
    }
   return result
 }
+
+
+// Another way to solve
