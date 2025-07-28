@@ -21,3 +21,10 @@ function vowelOne(s){
   }
   return total
 }
+
+
+// Another way to solve
+function vowelOne(s){
+let vowels = 'aeiouAEIOU'
+return s.split('').map(c => vowels.includes(c) ? '1' : '0').join('')
+}
