@@ -67,3 +67,11 @@ function trueOrFalse(val){
   if(!val) return 'false'
   else return 'true'
 }
+
+
+// Write function parseF which takes an input and returns a number or null if conversion is not possible. The input can be one of many different types so be aware.
+
+function parseF(input) {
+  const num = parseFloat(input);
+  return isNaN(num) ? null : num;
+}
