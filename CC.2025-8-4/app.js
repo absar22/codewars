@@ -3,3 +3,30 @@
 const arrowFunc = function(arr) {
   return arr.map(n => String.fromCharCode(n) ).join(''); 
 }
+
+
+// Mission
+// Your mission is to implement a function that converts the following potentially harmful characters:
+
+// < --> &lt;
+// > --> &gt;
+// " --> &quot;
+// & --> &amp;
+
+function htmlspecialchars(formData) {
+  
+  let result = ''
+  
+  for(let i = 0; i < formData.length; i++){
+    let char = formData[i]
+    
+   if(char === '<') result += '&lt;'
+  else if(char === '>') result += '&gt;'
+  else if(char === '"') result += '&quot;'
+  else if(char === '&') result += '&amp;'
+   else result += char
+  }
+ 
+ return result
+    
+}
