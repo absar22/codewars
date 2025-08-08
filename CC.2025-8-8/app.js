@@ -116,3 +116,17 @@ function maxDiff(list) {
   let min = Math.min(...list)
   return max - min
 };
+
+// Write a program that outputs the top n elements from a list.
+
+// Example:
+
+// k = 2; list = [7, 6, 5, 4, 3, 2, 1]
+// ==> [6, 7]
+
+function largest(n, array) {
+  // Find the n highest elements in a list
+  if(n === 0) return []
+  let sorted = array.sort((a,b) => a - b)
+  return sorted.slice(-n)
+}
