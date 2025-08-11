@@ -62,3 +62,32 @@ function greetDevelopers(list) {
 // ["KARLY", "DANIEL", "KELSEY"] --> ["Karly", "Daniel", "Kelsey"]
 
 const capMe = names => names.map(e => e[0].toUpperCase() + e.slice(1).toLowerCase())
+
+
+
+// Write a function that takes an integer num (num >= 0) and inserts dashes ('-') between each two odd digits in num.
+
+// Examples
+// 454793 ---> "4547-9-3"
+//      0 ---> "0"
+//      1 ---> "1"
+// 13579  ---> "1-3-5-7-9"
+//  86420 ---> "86420"
+
+
+
+function insertDash(num) {
+  let str = num.toString()
+    let result = str[0];
+ 
+  for(let i = 1; i < str.length; i++){
+    let prevVal = parseInt(str[i - 1]);
+    let currentVal = parseInt(str[i]);
+
+    if(prevVal % 2 !== 0 && currentVal % 2 !==0){
+      result += '-'
+    }
+    result += currentVal
+  }
+  return result
+}
