@@ -17,3 +17,20 @@ function openOrSenior(data){
   
  return data.map(arr => (arr[0] >= 55 && arr[1] > 7) ? 'Senior' : 'Open' )
 }
+
+
+
+// Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string (alphabetical ascending), the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+
+// Examples:
+// a = "xyaabbbccccdefww"
+// b = "xxxxyyyyabklmopq"
+// longest(a, b) -> "abcdefklmopqwxy"
+
+// a = "abcdefghijklmnopqrstuvwxyz"
+// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
+function longest(s1, s2) {
+ let strConcat = s1+s2
+ return strConcat.split('').sort().filter((e,i,arr) => arr.indexOf(e) === i).join('')
+}
