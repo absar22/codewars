@@ -33,28 +33,86 @@ function openOrSenior(data){
 function longest(s1, s2) {
  let strConcat = s1+s2
  return strConcat.split('').sort().filter((e,i,arr) => arr.indexOf(e) === i).join('')
+
+
 }
 
 
 
-// There is a bus moving in the city which takes and drops some people at each bus stop.
-
-// You are provided with a list (or array) of integer pairs. Elements of each pair represent the number of people that get on the bus (the first item) and the number of people that get off the bus (the second item) at a bus stop.
-
-// Your task is to return the number of people who are still on the bus after the last bus stop (after the last array). Even though it is the last bus stop, the bus might not be empty and some people might still be inside the bus, they are probably sleeping there :D
-
-// Take a look on the test cases.
-
-// Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the returned integer can't be negative.
-
-// The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
 
 
-var number = function(busStops){
-  let people = 0
-  for(let i = 0; i < busStops.length;i++){
-    let [on,off] = busStops[i]
-    people += on - off
+
+
+
+
+// Task
+// Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
+
+// S
+// e
+// r
+// i
+// e
+// s
+// :
+// 1
+// +
+// 1
+// 4
+// +
+// 1
+// 7
+// +
+// 1
+// 10
+// +
+// 1
+// 13
+// +
+// 1
+// 16
+// +
+// …
+// Series:1+ 
+// 4
+// 1
+// ​
+//  + 
+// 7
+// 1
+// ​
+//  + 
+// 10
+// 1
+// ​
+//  + 
+// 13
+// 1
+// ​
+//  + 
+// 16
+// 1
+// ​
+//  +…
+// You will need to figure out the rule of the series to complete this.
+
+// Rules
+// You need to round the answer to 2 decimal places and return it as String.
+
+// If the given value is 0 then it should return "0.00".
+
+// You will only be given Natural Numbers as arguments.
+
+// Examples (Input --> Output)
+// n
+// 1 --> 1 --> "1.00"
+// 2 --> 1 + 1/4 --> "1.25"
+// 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
+
+function SeriesSum(n) {
+  let sum = 0
+  for(let i = 0; i < n ;i++){
+     sum += 1 / (1 + i * 3);
   }
-  return people
+  return sum.toFixed(2)
 }
