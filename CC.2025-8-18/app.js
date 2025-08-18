@@ -116,3 +116,39 @@ function SeriesSum(n) {
   }
   return sum.toFixed(2)
 }
+
+
+// Create a function named divisors/Divisors that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime' (null in C#, empty table in COBOL) (use Either String a in Haskell and Result<Vec<u32>, String> in Rust).
+
+// Examples:
+// divisors(12) --> [2, 3, 4, 6]
+// divisors(25) --> [5]
+// divisors(13) --> "13 is prime"
+
+function divisors(integer) {
+  let newArr = []
+  for(let i = 2; i < integer;i++){
+    if(integer % i === 0){
+      newArr.push(i)
+    }
+  }
+  return newArr.length > 0 ? newArr : `${integer} is prime`
+}
+
+
+// Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+
+// (In this case, all triangles must have surface greater than 0 to be accepted).
+
+// Examples:
+
+// Input -> Output
+// 1,2,2 -> true
+// 4,2,3 -> true
+// 2,2,2 -> true
+// 1,2,3 -> false
+// -5,1,3 -> false
+// 0,2,3 -> false
+// 1,2,9 -> false 
+
+const  isTriangle = (a,b,c) => a + b > c && a + c > b && b + c > a;;
