@@ -12,3 +12,24 @@ if(a.length >= b.length){
     return a + b.split('').reverse().join('') + a
   }
 }
+
+// Your Task
+// Inside the solution function you have to require express and start a server.
+
+// The PORT and HOST are going to be pre-loaded in the process.env object (in a node application process.env stores the environment configuration).
+
+// process.env = {
+//   PORT: 3000,
+//   HOST: '0.0.0.0',
+// };
+
+const solution = () => {
+  var express = require('express');
+  var app = express()
+  var PORT = process.env.PORT;
+  var HOST = process.env.HOST;
+  
+  app.listen(PORT, HOST, () => {
+    console.log(`Server running at http://${HOST}:${PORT}`);
+  })
+};
