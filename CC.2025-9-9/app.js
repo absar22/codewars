@@ -21,3 +21,12 @@ function window(length,offset,list) {
   }
   return resultArr
 }
+// Another way to sove this 
+function window(length,offset,list) {
+    let newArr = []
+    for(let position = 0; position + length <= list.length; position += offset){
+      const currentWindow = list.slice(position , position + length)
+      newArr.push(currentWindow)
+    }
+  return newArr
+}
