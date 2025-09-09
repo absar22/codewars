@@ -99,3 +99,17 @@ function dutyFree(normPrice, discount, hol){
   let val = normPrice * (discount / 100)
   return Math.floor((hol/ val))
 }
+
+
+// When provided with a letter, return its position in the alphabet.
+
+// Input :: "a"
+
+// Output :: "Position of alphabet: 1"
+
+// Note: Only lowercased English letters are tested
+
+function position(letter){
+//   return letter.toLowerCase().charCodeAt(letter)
+  return `Position of alphabet: ${letter.toLowerCase().charCodeAt(letter) - 96}`
+}
