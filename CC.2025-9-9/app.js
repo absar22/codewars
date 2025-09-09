@@ -45,3 +45,26 @@ function nthEven(n){
   return (n - 1) * 2
   
 }
+
+
+// Numbers ending with zeros are boring.
+
+// They might be fun in your world, but not here.
+
+// Get rid of them. Only the ending ones.
+
+// 1450   -> 145
+// 960000 -> 96
+// 1050   -> 105
+// -1050  -> -105
+// 0      -> 0
+// Note: Zero should be left as it is.
+
+
+function noBoringZeros(n) {
+   let newStr = n.toString()
+   while(newStr.endsWith('0') && newStr !== 0){
+     newStr = newStr.slice(0,-1)
+   }
+  return +newStr
+}
