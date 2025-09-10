@@ -108,3 +108,25 @@ function isPangram(string) {
     const lowerString = string.toLowerCase();
     return alphabet.split('').every(letter => lowerString.includes(letter));
 }
+
+
+
+// Complete the solution so that the function will break up camel casing, using a space between words.
+
+// Example
+// "camelCasing"  =>  "camel Casing"
+// "identifier"   =>  "identifier"
+// ""             =>  ""
+
+
+function solution(string) {
+  let result = ''
+  for(let i = 0; i < string.length; i++){
+    if(string[i] >= 'A' && string[i] <= 'Z'){
+      result += ' ' + string[i]
+    }else{
+      result += string[i]
+    }
+  }
+  return result
+}
