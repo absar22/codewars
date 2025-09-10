@@ -101,3 +101,10 @@ function isPangram(string){
   }
   return true
 }
+
+// AnotherWay
+function isPangram(string) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const lowerString = string.toLowerCase();
+    return alphabet.split('').every(letter => lowerString.includes(letter));
+}
