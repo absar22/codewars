@@ -49,3 +49,36 @@ function alphabetPosition(text) {
   return val.join(' ')
   
 }
+
+
+
+// Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
+
+// Examples
+// "the-stealth-warrior" gets converted to "theStealthWarrior"
+
+// "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+// "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+
+
+function toCamelCase(str){
+return str
+  .replaceAll('-', ('_'))
+  .split('_')
+  .map((e,i) => i === 0 ? e : e[0].toUpperCase()+e.slice(1))
+  .join('')
+}
+
+
+// Write a method (or function, depending on the language) that converts a string to camelCase, that is, all words must have their first letter capitalized and spaces must be removed.
+
+// Examples (input --> output):
+// "hello case" --> "HelloCase"
+// "camel case word" --> "CamelCaseWord"
+
+String.prototype.camelCase=function(){
+  //your code here
+ return this.split(' ').map(e => e.charAt(0).toUpperCase()+e.slice(1)).join('')
+  
+}
