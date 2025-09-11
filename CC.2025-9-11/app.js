@@ -16,3 +16,8 @@ function correctTail(bod, tail) {
     return false
   }
 }
+
+// 
+function correctTail(bod, tail) {
+  return bod.endsWith(tail)
+}
