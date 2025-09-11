@@ -171,3 +171,20 @@ function validateUsr(username) {
   }
   return true
 }
+
+
+function validateUser(username) {
+    if (username.length < 4 || username.length > 16) return false;
+    
+    for (let i = 0; i < username.length; i++) {
+        const char = username[i];
+        const isLowercase = char >= 'a' && char <= 'z';
+        const isDigit = char >= '0' && char <= '9';
+        const isUnderscore = char === '_';
+        
+        if (!isLowercase && !isDigit && !isUnderscore) {
+            return false;
+        }
+    }
+    return true;
+}
