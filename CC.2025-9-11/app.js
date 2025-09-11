@@ -150,3 +150,24 @@ function convertToCelsius (temperature) {
 function animal(obj){
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
 }
+
+
+// Write a simple regex to validate a username. Allowed characters are:
+
+// lowercase letters,
+// numbers,
+// underscore
+// Length should be between 4 and 16 characters (both included).
+
+function validateUsr(username) {
+//   const res =  //regex here/.test(username)
+//   return res;
+ if(username.length < 4 ||username.length > 16) return false
+  for(let i = 0 ; i < username.length; i++){
+    let ch = username[i]
+    if(!(ch >= 'a' && ch <= 'z') && !(ch >= '0' && ch <= '9') && ch !== '_'){
+      return false
+    }
+  }
+  return true
+}
