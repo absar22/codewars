@@ -109,3 +109,37 @@ const shortenToDate = longDate => longDate.split(',')[0]
 
 // If you're not familiar with the Express concepts needed to complete this kata, feel free to reference the documentation and other resources as you build your solution.
 
+const express = require("express");
+const app = express();
+
+app.use(express.json()); // to parse JSON bodies
+
+// GET /
+app.get("/", (req, res) => {
+  const message = req.query.message;
+
+  if (message === undefined) {
+    return res.status(422).json({ error: "'message' was not provided" });
+  }
+  if (typeof message !== "string") {
+    return res.status(422).json({ error: "'message' was not a string" });
+  }
+
+  return res.status(200).json({ message });
+});
+
+// POST /
+app.post("/", (req, res) => {
+  const { message } = req.body;
+
+  if (message === undefined) {
+    return res.status(422).json({ error: "'message' was not provided" });
+  }
+  if (typeof message !== "string") {
+    return res.status(422).json({ error: "'message' was not a string" });
+  }
+
+  return res.status(200).json({ message });
+});
+
+module.exports = app;
