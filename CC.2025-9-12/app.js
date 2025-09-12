@@ -72,3 +72,13 @@ function quadrant(x, y) {
     return 4;
   }
 }
+
+
+
+// Input
+// Input will always be a string, e.g., "Friday May 2, 7pm". 
+
+// Output
+// Output will be the shortened string, e.g., "Friday May 2".
+
+const shortenToDate = longDate => longDate.split(',')[0]
