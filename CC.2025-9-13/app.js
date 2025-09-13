@@ -96,3 +96,14 @@ function quote(fighter) {
  if(fighter.toLowerCase() === 'george saint pierre') return "I am not impressed by your performance."
   else if (fighter.toLowerCase() === 'conor mcgregor') return "I'd like to take this chance to apologize.. To absolutely NOBODY!"
 };
+
+
+// Write a function that takes in a numeric code of any length. 
+// The function should check if the code begins with 1, 2, or 3 and return true if so. Return false otherwise.
+
+// You can assume the input will always be a number.
+
+function validateCode (code) {
+ code = code.toString()
+ return code.startsWith('1') || code.startsWith('2') || code.startsWith('3')
+}
