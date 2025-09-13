@@ -22,3 +22,11 @@ function seatsInTheater(nCols, nRows, col, row) {
   return (nCols - col + 1) * (nRows - row)
   
 }
+
+
+// Implement String#digit? (in Java StringUtils.isDigit(String)),
+//  which should return true if given object is a single digit (0-9), false otherwise.
+
+String.prototype.digit = function(char) {
+  return this >= '0' && this <= '9' && this.length === 1
+};
