@@ -30,3 +30,18 @@ function seatsInTheater(nCols, nRows, col, row) {
 String.prototype.digit = function(char) {
   return this >= '0' && this <= '9' && this.length === 1
 };
+
+
+// Description:
+// Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string.
+//  For a beginner kata, you can assume that the input data is always a non empty string, no need to verify it.
+
+// Examples
+// "Hi!"     ---> "Hi!"
+// "Hi!!!"   ---> "Hi!"
+// "!Hi"     ---> "Hi!"
+// "!Hi!"    ---> "Hi!"
+// "Hi! Hi!" ---> "Hi Hi!"
+// "Hi"      ---> "Hi!"
+
+const remove  = string =>  `${string.replaceAll('!', '')}!`
