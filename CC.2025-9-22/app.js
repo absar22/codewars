@@ -63,3 +63,26 @@ module.exports = configuration
 // Fix the function to make it return 32 without changing the number or the operators.
 
 const orderOperations =  () => (2 + 2) * (2 + 2) * 2
+
+// You are creating an "Escape the room" game. 
+// The first step is to create a hash table ( dict in Python) called rooms that contains all of the rooms of the game.
+//  There should be at least 3 rooms inside it, each room being a hash table with at least 3 properties (e.g. name, description, completed).
+
+// Add rooms here
+var rooms = {
+ rooms1: {
+   name: 'alpha',
+   discription: 'male',
+   completed: false
+ },
+   rooms2: {
+   name: 'beta',
+   discription: 'male',
+   completed: false
+ },
+   rooms3: {
+   name: 'gamma',
+   discription: 'male',
+   completed: true
+ },
+}
