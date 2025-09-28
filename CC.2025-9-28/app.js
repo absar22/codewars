@@ -78,3 +78,53 @@ var splitInParts = function(s, partLength){
   }
   return arr.join(' ')
 }
+
+// Modify the kebabize function so that it converts a camel case string into a kebab case.
+
+// "camelsHaveThreeHumps"  -->  "camels-have-three-humps"
+// "camelsHave3Humps"  -->  "camels-have-humps"
+// "CAMEL"  -->  "c-a-m-e-l"
+
+function kebabize(str) {
+ return str.split('').filter(x=>isNaN(x)).map((el,i) => {
+   return (el === el.toUpperCase() && i !== 0 ? '-' : '') + el.toLowerCase()
+ })
+  .join('')
+}
+
+
+// You are given a secret message you need to decipher. Here are the things you need to know to decipher it:
+
+// For each word:
+
+// the second and the last letter is switched (e.g. Hello becomes Holle)
+// the first letter is replaced by its character code (e.g. H becomes 72)
+// there are no special characters used, only letters and spaces
+// words are separated by a single space
+// there are no leading or trailing spaces
+// Examples
+
+// '72olle 103doo 100ya' --> 'Hello good day'
+// '82yade 115te 103o'   --> 'Ready set go'
+function decipherThis(str) {
+  return str.split(' ').map(word => {
+    let num = ''
+    let restStr = ''
+    for(let char of word){
+      if(!isNaN(char)){
+        num += char
+      }else{
+        restStr += char
+      }
+    }
+    let firstLetter = String.fromCharCode(+num)
+    if(restStr.length > 1 ){
+      let char = restStr.split('')
+      let temp = char[0]
+      char[0] = char[char.length -1]
+      char[char.length -1] = temp
+      restStr = char.join('')
+    }
+    return firstLetter + restStr
+  }).join(' ')
+}
