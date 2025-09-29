@@ -73,3 +73,18 @@ function getFirstPython(list) {
  let pythonDev = list.find(lang => lang.language === 'Python')
  return pythonDev ? `${pythonDev.firstName}, ${pythonDev.country}` : 'There will be no Python developers'
 }
+
+
+// Given an array of numbers (in string format), you must return a string. 
+// The numbers correspond to the letters of the alphabet in reverse order: a=26, z=1 etc. 
+// You should also account for '!', '?' and ' ' that are represented by '27', '28' and '29' respectively.
+
+// All inputs will be valid.
+function switcher(x){
+return x.map(nums => {
+  if(nums >= 1 && nums <= 26) return String.fromCharCode(123 - nums)
+  else if (nums == 27) return '!'
+  else if(nums == 28) return '?'
+  else if(nums == 29) return ' '
+}).join('')
+}
