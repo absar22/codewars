@@ -131,3 +131,20 @@ function evenChars(string) {
   }
   return arr
 }
+
+// complete the function that takes a string of English-language text and returns the number of consonants in the string.
+
+// Consonants are all letters used to write English excluding the vowels a, e, i, o, u.
+
+function consonantCount(str) {
+   let count = 0
+  let vowels = 'aeiouAEIOU'
+ for(let char of str){
+   let code = char.charCodeAt(0)
+   let isLetter = (code >= 65 && code <= 90) || (code >= 97 && code <= 122)
+   if(isLetter && !vowels.includes(char)){
+     count += 1
+   }
+ }
+  return count
+}
