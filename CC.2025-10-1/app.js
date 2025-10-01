@@ -101,3 +101,19 @@ for(let char of s){
 }
   return Math.max(max, +currentNum || 0)
 };
+
+
+// Coding in function cutCube. function accept 2 parameter: volume and n. volume is the volume of a cube.
+//  If we cut the cube into n block.
+//  please determine whether the length of the cube is an integer. return true or false.
+
+function cutCube(volume, n) {
+ 
+  let bigSide = Math.cbrt(volume)
+
+  if (bigSide % 1 !== 0) return false
+  if (volume % n !== 0) return false
+  let smallVolume = volume / n
+  let smallSide = Math.cbrt(smallVolume)
+  return smallSide % 1 === 0
+}
