@@ -134,3 +134,15 @@ function addExtra( listOfNumbers ){
   return listOfNumbers.concat([1])
  
 }
+
+//The function should return true if the callback / block returns false for all of the items in the array, or if the array is empty; 
+// otherwise return false.
+
+function none(arr, fun){
+ for(let i= 0; i < arr.length; i++){
+   if(fun(arr[i])){
+     return false
+   }
+ }
+  return true
+}
