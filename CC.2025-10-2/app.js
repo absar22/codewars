@@ -91,10 +91,31 @@ function arithmetic(a, b, operator){
 }
 
 // Your task is to write function factorial.
+
 function factorial(n){
  let res = 1
  for(let i = 1 ; i <= n; i ++){
    res *= i
  }
   return res
+}
+
+
+// My grandfather always predicted how old people would get, and right before he passed away he revealed his secret!
+
+// In honor of my grandfather's memory we will write a function using his formula!
+
+// Take a list of ages when each of your great-grandparent died.
+// Multiply each number by itself.
+// Add them all together.
+// Take the square root of the result.
+// Divide by two.
+
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+   let ages = [age1,age2,age3,age4,age5,age6,age7,age8]
+  let multiply = ages.map(age => age * age)
+  let add = multiply.reduce((a,b) => a + b, 0)
+  let sqrRoot = Math.sqrt(add) / 2
+  return Math.floor(sqrRoot)
 }
