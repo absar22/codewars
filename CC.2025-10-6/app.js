@@ -37,3 +37,5 @@ if(names.length <= 2) return firstName + ' ' + lastName
   let middleName = names.slice(1,-1).map(n => n[0] + '.').join(' ')
   return firstName + ' ' + middleName + ' ' + lastName
 }
+
+
