@@ -17,3 +17,21 @@ function gimmeTheLetters(sp) {
   }
   return results
 }
+
+
+// Given a string of space separated words, return the longest word.
+// If there are multiple longest words, return the rightmost longest word.
+
+// Examples
+// "red white blue"  =>  "white"
+// "red blue gold"   =>  "gold"
+function longestWord(stringOfWords) {
+  let val = stringOfWords.split(' ')
+  let longest = ''
+  for(let i = 0 ; i < val.length; i++){
+    if(val[i].length >= longest.length){
+      longest = val[i]
+    }
+  }
+  return longest
+}
