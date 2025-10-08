@@ -33,3 +33,11 @@ function sevenAte9(str) {
   }
   return results
 }
+
+//
+function sevenAte9(str) {
+  while(str.includes('797')){
+    str =  str.replaceAll('797', '77')
+  }
+  return str
+}
