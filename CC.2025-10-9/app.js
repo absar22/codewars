@@ -35,3 +35,32 @@ function findAdmin(list, lang) {
 return list.filter(obj => obj.language === lang && obj.githubAdmin === 'yes')
   
 }
+
+
+
+// Your task is to return an object (associative array in PHP, table in COBOL, dictionary in Python) which includes the count of each coding language represented at the meetup.
+
+// For example, given the following input array:
+
+// var list1 = [
+//   { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'C' },
+//   { firstName: 'Anna', lastName: 'R.', country: 'Liechtenstein', continent: 'Europe', age: 52, language: 'JavaScript' },
+//   { firstName: 'Ramon', lastName: 'R.', country: 'Paraguay', continent: 'Americas', age: 29, language: 'Ruby' },
+//   { firstName: 'George', lastName: 'B.', country: 'England', continent: 'Europe', age: 81, language: 'C' },
+// ];
+// your function should return the following object (associative array in PHP, table in COBOL):
+
+// { C: 2, JavaScript: 1, Ruby: 1 }
+
+function countLanguages(list) {
+ let count = {}
+ for(let dev of list){
+   let lang = dev.language
+   if(count[lang]){
+     count[lang]++
+   }else{
+     count[lang] = 1
+   }
+ }
+  return count
+}
