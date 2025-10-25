@@ -59,3 +59,24 @@ function getStrings(city){
 function ghostBusters(building) {
 return building.includes(' ') ? building.replaceAll(' ','') : "You just wanted my autograph didn't you?"
 }
+
+
+// The Task
+// Given a string, you must decide whether or not it contains a valid phone number.
+//  If it does, return the corrected phone number as a string ie. '02078834982' with no whitespace or special characters,
+//   else return "Not a phone number".
+
+function isItANum(str) {
+let digit = ''
+for(let i = 0; i < str.length; i++){
+  let letter = str[i]
+  if(letter >= '0' && letter <= '9'){
+    digit += letter
+  }
+}
+  if(digit.length === 11 && digit[0] === '0'){
+    return digit
+  }else{
+    return "Not a phone number"
+  }
+}
