@@ -80,3 +80,30 @@ for(let i = 0; i < str.length; i++){
     return "Not a phone number"
   }
 }
+
+
+// Your task is to complete the function which takes a string, and returns an array with all possible rotations of the given string, 
+// in uppercase.
+
+// Example
+// scrollingText("codewars") should return:
+
+// [ "CODEWARS",
+//   "ODEWARSC",
+//   "DEWARSCO",
+//   "EWARSCOD",
+//   "WARSCODE",
+//   "ARSCODEW"
+//   "RSCODEWA",
+//   "SCODEWAR" ]
+// Good luck!
+
+function scrollingText(text){
+  let results = []
+  let temp = text.toUpperCase()
+  for(let i = 0; i < text.length;i++){
+    results.push(temp)
+    temp = temp.slice(1) + temp[0]
+  }
+  return results
+}
