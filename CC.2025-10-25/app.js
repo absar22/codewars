@@ -118,3 +118,24 @@ function scrollingText(text){
 function alphabetic(s) {
  return s.split('').sort().join('') === s
 }
+
+// Your task is very simple. Given an input string s, case_sensitive(s), check whether all letters are lowercase or not. Return True/False and a list of all the entries that are not lowercase in order of their appearance in s.
+
+// For example, case_sensitive('codewars') returns [True, []], but case_sensitive('codeWaRs') returns [False, ['W', 'R']].
+
+// Goodluck :)
+
+// Have a look at my other katas!
+
+function case_sensitive(s){
+  let upperCase = []
+  for(let i = 0; i < s.length; i++){
+  let char = s[i]
+  if(char >= 'A' && char <= 'Z'){
+     upperCase.push(char)
+  }
+  }
+
+  let isLowerCase = upperCase.length === 0
+  return [  isLowerCase,upperCase]
+}
