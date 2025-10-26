@@ -9,3 +9,6 @@
 // [{1:1},{2:2}] => false
 
 const arrCheck = value => Array.isArray(value) && value.every(Array.isArray)
+
+// Another way to solve
+const arrCheck1 = value => value.every(Array.isArray)
